@@ -5,12 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && yarn build",
-    "install-client": "cd .. && cd client && yarn install",
-    "heroku-postbuild": "yarn install-client && yarn build",
-    "old-start": "cd .. && cd client && yarn start",
-    "start": "nodemon server.js",
-    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon server.js\" \"yarn old-start\""
+    "start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
